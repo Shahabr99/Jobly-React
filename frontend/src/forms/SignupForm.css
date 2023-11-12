@@ -1,0 +1,84 @@
+main {
+  height: 100%;
+}
+
+.form-box {
+  width: 450px;
+  height: 500px;
+  margin: 100px auto;
+  padding: 24px;
+  background-color: rgb(61, 61, 175);
+  box-shadow: 4px 4px 1px #000;
+}
+
+.signup-form {
+  padding: 12px;
+}
+
+.signup-form input {
+  width: 250px;
+  height: 30px;
+  margin-left: 12px;
+}
+
+.email {
+  margin-left: 24px;
+}
+
+label {
+  color: #fff;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  width: 200px;
+  margin:  20px  60px;
+  align-items: center;
+}
+
+.buttons button {
+  text-transform: uppercase;
+  padding: 14px 26px;
+  color: #eee;
+  background-color: rgb(19, 19, 177);
+  box-shadow: 2px 2px 1px #000;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:active {
+  text-transform: uppercase;
+  padding: 14px 26px;
+  color: #eee;
+  background-color: rgb(19, 19, 177);
+  box-shadow: 1px 1px 1px #000;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons a {
+  background-color: rgb(19, 19, 177);
+  color: #eee;
+  padding: 12px 24px;
+  box-shadow: 2px 2px 1px #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.buttons a:active {
+  background-color: rgb(19, 19, 177);
+  color: #eee;
+  padding: 12px 24px;
+  box-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
