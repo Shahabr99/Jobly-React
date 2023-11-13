@@ -16,7 +16,7 @@ function Homepage() {
           <h1>Welcome to the largest job database in the market.</h1>
           <p>You are one click away from your dream job.</p>
           { currentUser ? 
-            <h2>Welcome { currentUser }</h2> :
+            <h2>Welcome { currentUser.username }</h2> :
             <div className="anchor-box">
               <Link to="/signin">Log in</Link>
               <Link to="/signup">Sign up</Link>
@@ -29,8 +29,8 @@ function Homepage() {
           <h1>Welcome to the largest job database in the market.</h1>
           <p>You are one click away from your dream job.</p>
           { currentUser ? 
-            <h2>Welcome { currentUser }</h2> :
-            <p>Welcome {currentUser}, go ahead and apply some jobs</p>
+            <h2>Welcome { currentUser.username }</h2> :
+            <p>Welcome {currentUser.username}, go ahead and apply some jobs</p>
           } 
         </div>
       }

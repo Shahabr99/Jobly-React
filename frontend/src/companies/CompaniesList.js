@@ -1,13 +1,27 @@
-import React, {useContext} from 'react';
-import DataContext from '../DataContext';
+import React, {useState, useEffect} from 'react';
+import JoblyApi from '../api/api';
+import CompanyCard from './CompanyCard';
+
 
 function CompaniesList() {
-  const {currentUser} = useContext(DataContext)
+  const [companies, setCompanies] = useState([])
+
+  useEffect(function getCompanies() {
+    getAllCompanies()
+  }, [])
+
+  async function getAllCompanies(name) {
+    const data = await JoblyApi.getCompanies(name);
+    console.log(data)
+    setCompanies(data)
+  }
   
   return (
-    <main className='container'>
-      <h1>List of companies go here {currentUser}</h1>
-    </main>
+    <div className='container'>
+      {companies.map(c => (
+        <CompanyCard name={c.name} desc={c.description} key={c.handle} />
+      ))}
+    </div>
   )
 }
 

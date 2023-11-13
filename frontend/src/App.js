@@ -21,12 +21,13 @@ function App() {
   useEffect(function getUserData() {
     async function getUser() {
       if(token) {
+       
         try{
           let { username } = jwtDecode(token);
-
+          
           JoblyApi.token = token
           const user = await JoblyApi.getCurrentUser(username);
-          console.log(user)
+          
           setCurrentUser(user);
 
         }catch(err){

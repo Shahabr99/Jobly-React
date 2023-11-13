@@ -1,7 +1,9 @@
 .container {
   margin: 100px auto;
-  width: 700px;
+  width: 1000px;
   text-align: center;
-  word-spacing: 2px;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
