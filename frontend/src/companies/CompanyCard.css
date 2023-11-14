@@ -1,15 +1,14 @@
 .card {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
   padding: 6px;
-  width: 900px;
+  width: 850px;
   height: 120px;
   background-color: #eee;
   border-radius: 5px;
-  display: inline-block;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
+  margin: 5px auto;
+  border: 1px solid;
 }
 
 a h4 {

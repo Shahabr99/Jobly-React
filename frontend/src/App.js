@@ -5,7 +5,7 @@ import Navbar from './Routes-nav/Navbar'
 import './App.css';
 import useLocalStorage from './hooks/useLocalStorage';
 import LoadingSpinner from './LoadingSpinner';
-import DataContext from './DataContext';
+import DataContext from './helpers/DataContext';
 import { BrowserRouter } from 'react-router-dom';
 import {jwtDecode } from 'jwt-decode';
 export const TOKEN_STORAGE_ID = "jobly-token";

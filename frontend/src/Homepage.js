@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'
 import './Homepage.css';
-import DataContext from './DataContext';
+import DataContext from './helpers/DataContext';
 
 
 function Homepage() {

@@ -1,0 +1,13 @@
+.job-card {
+  width: 700px;
+  height: 130px;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 24px;
+  margin: 12px auto;
+  border: 1px solid;
+}
+
+.job-card h3 {
+  color: rgb(57, 57, 174);
+}
