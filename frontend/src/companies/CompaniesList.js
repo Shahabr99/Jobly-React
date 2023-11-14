@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import JoblyApi from '../api/api';
 import CompanyCard from './CompanyCard';
+import "./CompaniesList.css"
 
 function CompaniesList() {
   const [companies, setCompanies] = useState([])
@@ -9,22 +10,18 @@ function CompaniesList() {
     getAllCompanies()
   }, [])
 
-  async function getAllCompanies(name) {
-    const data = await JoblyApi.getCompanies(name);
+  async function getAllCompanies() {
+    const data = await JoblyApi.getCompanies();
     console.log(data)
     setCompanies(data)
   }
   
   return (
-      <main>
-        {companies.map(c => (
-         
-            <div >
-              <CompanyCard key={c.handle} name={c.name} desc={c.description} handle={c.handle} />
-            </div>
-         
-        ))}
-      </main>
+    <main className='companies-list'>
+      {companies.map(c => (
+        <CompanyCard key={c.handle} name={c.name} desc={c.description} handle={c.handle} />
+      ))}
+    </main>
   )
 }
 
