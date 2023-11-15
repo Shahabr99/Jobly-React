@@ -3,8 +3,6 @@ import './CompanyCard.css';
 import {Link} from 'react-router-dom';
 
 
-
-
 const CompanyCard = ({handle, name, desc}) => {
   
 

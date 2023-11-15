@@ -12,7 +12,7 @@ function JobsList() {
         const data = await JoblyApi.getJobs();
         console.log(data);
         setJobs(data)
-      }catch(err){
+      } catch(err) {
         console.error(err)
       }
     }

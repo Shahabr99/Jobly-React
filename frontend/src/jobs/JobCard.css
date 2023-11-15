@@ -1,7 +1,7 @@
 .job-card {
   width: 700px;
   height: 130px;
-  background-color: #eee;
+  background-color: rgb(68, 68, 193);
   border-radius: 5px;
   padding: 24px;
   margin: 12px auto;
@@ -9,5 +9,6 @@
 }
 
 .job-card h3 {
-  color: rgb(57, 57, 174);
+  color: #000;
+  letter-spacing: 1.5px;
 }

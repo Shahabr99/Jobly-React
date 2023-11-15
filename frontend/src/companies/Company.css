@@ -1,7 +1,20 @@
-.container-company {
+.container-company-jobs {
   margin: 100px auto;
   width: 700px;
   text-align: center;
   word-spacing: 2px;
   font-family: 'Roboto', sans-serif;
+}
+
+/* .container-company-jobs h2 {
+  text-transform: uppercase;
+} */
+
+
+.company-job-card {
+  background-color: rgb(68, 68, 193);
+  padding: 6px;
+  border: 1px solid;
+  margin: 12px;
+  box-shadow: 1px 1px 1px #000;
 }

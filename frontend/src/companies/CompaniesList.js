@@ -12,7 +12,6 @@ function CompaniesList() {
 
   async function getAllCompanies() {
     const data = await JoblyApi.getCompanies();
-    console.log(data)
     setCompanies(data)
   }
   
