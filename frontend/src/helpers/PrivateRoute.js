@@ -1,19 +1,22 @@
 import {useContext} from 'react';
 import DataContext from "./DataContext";
-import {Route, Redirect} from 'react-router-dom';
+import {Route, Navigate} from 'react-router-dom';
 
 
 
 const PrivateRoute = ({path, children}) => {
   const {currentUser} = useContext(DataContext)
+  
 
   if(!currentUser) {
-    return <Redirect to="/login" />
+    return <Navigate to="/signin" />
   }
 
   return (
-    <Route path={path} element={children} />
-  )
+    <Route path={path}>
+      {children}
+    </Route >
+  );
 }
 
 export default PrivateRoute;

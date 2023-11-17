@@ -1,6 +1,21 @@
-.container-profile-form {
-  margin: 100px auto;
+.main-container {
+  width: 300px;
+  margin: 50px auto;
+}
+
+
+.content-holder {
   width: 500px;
+  margin: 100px auto;
+}
+
+.content-holder h2{
+  text-transform: upperCase;
+}
+
+
+.container-profile-form {
+  width: 400px;
   height: 300px;
   text-align: center;
   word-spacing: 2px;
@@ -16,7 +31,12 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: start;
+  align-items: flex-start;
+}
+
+
+.edit-profile-form div {
+  margin-bottom: 12px;
 }
 
 
