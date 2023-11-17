@@ -1,7 +1,61 @@
-.container {
+.container-profile-form {
   margin: 100px auto;
-  width: 700px;
+  width: 500px;
+  height: 300px;
   text-align: center;
   word-spacing: 2px;
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(76, 48, 137);
+  border-radius: 6px;
+  padding: 24px;
+ 
+}
+
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+}
+
+
+.edit-profile-form input {
+  height: 24px;
+  width: 200px;
+  margin-left: 24px;
+}
+
+
+.edit-profile-form input[type=submit] {
+  width: 120px;
+  height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.edit-profile-form input[type=submit]:hover {
+  width: 120px;
+  height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.edit-profile-form a {
+  width: 120px;
+  height: 24px;
+  text-decoration: none;
+  text-transform: upperCase;
+  background-color: #eee;
+  color: #000;
+  font-size: 14px;
+  padding-top: 8px;  
+}
+
+.btn-box {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
 }

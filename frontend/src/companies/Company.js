@@ -12,7 +12,7 @@ function Company() {
     async function getData() {
       try{
         const data = await JoblyApi.getCompany(handle);
-        console.log(data)
+        
         setCompanyData(data)
       } catch(err) {
         console.error(err)

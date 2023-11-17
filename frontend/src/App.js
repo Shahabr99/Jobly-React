@@ -4,7 +4,7 @@ import RouteList from './Routes-nav/Routes'
 import Navbar from './Routes-nav/Navbar'
 import './App.css';
 import useLocalStorage from './hooks/useLocalStorage';
-import LoadingSpinner from './LoadingSpinner';
+import LoadingSpinner from './helpers/LoadingSpinner';
 import DataContext from './helpers/DataContext';
 import { BrowserRouter } from 'react-router-dom';
 import {jwtDecode } from 'jwt-decode';
