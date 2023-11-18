@@ -28,7 +28,7 @@ function SignupForm({signup}) {
     e.preventDefault();
     let result = await signup(formData);
     if(result.success) {
-      navigate("/companies")
+      navigate("/")
     }else{
       console.error("Signup failed!")
     }

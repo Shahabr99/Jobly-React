@@ -46,7 +46,7 @@ function App() {
   async function addNewUser(userData) {
     try{
       let newToken = await JoblyApi.signup(userData);
-      console.log(token)
+      console.log(newToken)
       setToken(newToken)
       return { success: true }
     }catch(err){

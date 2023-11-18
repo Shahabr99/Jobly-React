@@ -6,7 +6,7 @@ import DataContext from '../helpers/DataContext';
 const Navbar = ({logout}) => {
 
   const { currentUser } = useContext(DataContext);
-  
+  console.log(currentUser)
   
   function loggedInNav() {
     return (

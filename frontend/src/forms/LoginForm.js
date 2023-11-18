@@ -13,7 +13,7 @@ function LoginForm({signin}) {
   })
   
   function handleChange(e) {
-    const {name, value} = e.target
+    const { name, value } = e.target
     setFormData(data => ({
       ...data,
       [name] : value
@@ -23,7 +23,7 @@ function LoginForm({signin}) {
   function handleSubmit(e) {
     e.preventDefault();
     signin(formData);
-    navigate("/companies")
+    navigate("/")
   }
 
 
@@ -39,7 +39,7 @@ function LoginForm({signin}) {
           <input type="password" name="password" id="password" value={formData.password} onChange={handleChange} />
         </div>
         <div className="buttons">
-          <button type="submit" onClick={handleSubmit}>Submit</button>
+          <button type="submit" >Submit</button>
           <Link to="/">homepage</Link>
         </div>
       </form>

@@ -1,10 +1,10 @@
-import {useContext} from 'react';
+import React, {useContext} from 'react';
 import DataContext from "./DataContext";
-import {Route, Navigate} from 'react-router-dom';
+import {Outlet, Navigate} from 'react-router-dom';
 
 
 
-const PrivateRoute = ({path, children}) => {
+const PrivateRoute = ({path, element}) => {
   const {currentUser} = useContext(DataContext)
   
 
@@ -13,10 +13,8 @@ const PrivateRoute = ({path, children}) => {
   }
 
   return (
-    <Route path={path}>
-      {children}
-    </Route >
-  );
-}
+    <Outlet />
+  )
+};
 
 export default PrivateRoute;
