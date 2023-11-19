@@ -31,7 +31,7 @@ function Company() {
           {companyData.jobs.map(j => (
             <div className='company-job-card' key={j.id}>
               <h4>{j.title}</h4>
-            {j.salary && <p>Annual income: {j.salary}</p>}
+            {j.salary && <p>Annual income: ${j.salary}</p>}
             </div>
           ))}
         </>
